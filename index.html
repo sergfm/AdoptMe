@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdoptMe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu Button -->
+    <div class="menu-container">
+        <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Ícono de hamburguesa -->
+        <div class="dropdown-menu" id="dropdown-menu">
+            <a href="#" class="menu-item">Quiénes somos?</a>
+            <a href="#" class="menu-item">Política de privacidad</a>
+            <a href="#" class="menu-item">Contáctanos</a>
+        </div>
+    </div>
+
+    <header>
+        <h1>AdoptMe</h1>
+        <p>Encuentra el amigo perfecto para tu hogar</p>
+    </header>
+    
+    <main>
+        <!-- Login Form -->
+        <div class="login-container">
+            <h2>Iniciar Sesión</h2>
+            <form class="login-form">
+                <input type="text" placeholder="Usuario" required>
+                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Ingresar</button>
+                <div class="register-section">
+                    <p>No tienes una cuenta?</p>
+                    <button type="button" class="register-btn">Regístrate</button>
+                </div>
+                <div class="remember-me">
+                    <label>
+                        <input type="checkbox" id="remember" name="remember">
+                        Recordar inicio de sesión
+                    </label>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AdoptMe. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
