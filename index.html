@@ -28,20 +28,21 @@
             <h2>Iniciar Sesión</h2>
             <form class="login-form">
                 <input type="text" placeholder="Usuario" required>
-                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
                 <input type="password" placeholder="Contraseña" required>
+                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
                 <button type="submit">Ingresar</button>
                 <div class="register-section">
                     <p>No tienes una cuenta?</p>
                     <button type="button" class="register-btn">Regístrate</button>
                 </div>
-                <div class="remember-me">
-                    <label>
-                        <input type="checkbox" id="remember" name="remember">
-                        Recordar inicio de sesión
-                    </label>
-                </div>
+                <!-- Casilla Recordar inicio de sesión con el texto a la derecha -->
+                
             </form>
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Recordar inicio de sesión</label>
+            </div>
+            
         </div>
     </main>
 
