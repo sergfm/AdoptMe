@@ -83,13 +83,19 @@
     background-color: #0056b3;
 }
 
+/* Remember Me Styles */
 .remember-me {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
     margin-top: 15px;
-    font-size: 0.75rem; /* Tamaño de texto pequeño */
+    font-size: 0.7rem; /* Tamaño del texto más pequeño */
+    color: #000; /* Color negro */
+    align-items: center; /* Alinea el texto con el checkbox */
 }
+
+.remember-me input {
+    margin-right: 10px; /* Añade un espacio de 10px entre el checkbox y el texto */
+}
+
 
 .remember-me input {
     margin-right: 5px;
@@ -128,6 +134,8 @@
     padding: 0;
     min-width: 200px;
     overflow: hidden; /* Hide overflow for rounded corners */
+    transform: translateY(-10px); /* Start with a slight upward offset */
+    transition: transform 0.3s ease; /* Smooth transition */
 }
 
 .menu-item {
@@ -136,6 +144,7 @@
     text-decoration: none;
     padding: 10px 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: bold; /* Set text to bold */
     transition: background-color 0.2s;
 }
 
@@ -145,6 +154,12 @@
 
 .menu-item:hover {
     background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Show menu animation */
+.dropdown-menu.show {
+    display: block; /* Make visible */
+    transform: translateY(0); /* Slide into position */
 }
 
 /* General Styles */
